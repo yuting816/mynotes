@@ -28,6 +28,7 @@ const routes = [
       path: '/user/:id',
       name: 'UserPage',
       component: ()=>import(/* webpackChunkName: "user" */'../views/user.vue')
+      
     },
     // 嵌套路由
     {
