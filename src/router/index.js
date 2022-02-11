@@ -56,12 +56,44 @@ const routes = [
     // 命名视图
     {
       path: '/nameView',
+      name: 'NameView',
       components: {
         // default: import('../views/name-view/view-default.vue'),
-        "a": ()=>import(/* webpackChunkName: "nameView" */'../views/name-view/view-a.vue'),
-        "b": ()=>import(/* webpackChunkName: "nameView" */'../views/name-view/view-b.vue')
+        "a": ()=>import(/* webpackChunkName: "NameView" */'../views/name-view/view-a.vue'),
+        "b": ()=>import(/* webpackChunkName: "NameView" */'../views/name-view/view-b.vue')
       }
+    },
+    // mapbox测试
+    {
+      path: '/mapbox',
+      name: 'Mapbox',
+      component: ()=>import(/* webpackChunkName: "mapbox" */'../views/mapbox/index.vue')
+    },
+    // vuex学习
+    {
+      path: '/learn-vuex',
+      name: 'vuex',
+      component: ()=>import(/* webpackChunkName: "vuex" */"../components/learnVuex/index.vue")
+    },
+    // 传参
+    {
+      path: "/paraTransfer",
+      name: 'paraTransfer',
+      component: ()=>import(/* webpackChunkName: "paraTransfer" */"../views/paraTransfer/index.vue")
+    },
+    // 菜单
+    {
+      path: '/learnMenu',
+      name: 'learnMenu',
+      component: ()=>import(/* webpackChunkName: "paraTransfer" */"../components/learn-menu/index.vue")
+    },
+    // vue练习
+    {
+      path: '/vuePractice',
+      name: 'vuePractice',
+      component: ()=>import(/* webpackChunkName: "vuePractice" */"../components/vuePractice/index.vue")
     }
+
 ]
 
 const router = new VueRouter({
