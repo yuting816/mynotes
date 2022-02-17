@@ -92,8 +92,13 @@ const routes = [
       path: '/vuePractice',
       name: 'vuePractice',
       component: ()=>import(/* webpackChunkName: "vuePractice" */"../components/vuePractice/index.vue")
+    },
+    // vue原理
+    {
+      path: '/vuePrinciple',
+      name: 'vuePrinciple',
+      component: ()=>import(/* webpackChunkName: "vuePrinciple" */"../components/vuePrinciple/index.vue")
     }
-
 ]
 
 const router = new VueRouter({

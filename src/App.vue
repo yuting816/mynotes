@@ -45,6 +45,9 @@
         <li>
           <router-link to="/vuePractice">vue练习</router-link>
         </li>
+        <li>
+          <router-link to="/vuePrinciple">vue原理</router-link>
+        </li>
       </ol>
     </div>
     <div class="right">
